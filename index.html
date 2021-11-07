@@ -1,195 +1,132 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-
   <head>
-
     <meta charset="UTF-8">
-
     <title>INDEX</title>
-
     <link rel="stylesheet" href="CSS/style1.css">
-
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
      
-
      <style> 
-
 g
-
 { border:8px solid #67c8d7;
-
 padding:0px 30px; 
-
 background:#fff;
-
 width:100px;
-
 border-radius:45px; }
 
+.center {
+   margin: auto;
+   margin-right: 5px;
+   margin-left: 2px;
+   width: 50%;
+   border: 5px;
+   padding: 4%;
+
 </style>
-
      
-
    </head>
-
 <body>
-
   <div class="sidebar">
-
     <div class="logo-details">
-
       <i class='bx bxl-c-plus-plus icon'></i>
-
         <div class="logo_name">MENU</div>
-
         <i class='bx bx-menu' id="btn" ></i>
-
     </div>
-
     <ul class="nav-list">
-
-    				    				<li>
-
-       <a href="https://line.me/ti/p/uBbtChN-YD">
-
-         <i class='bx bx-grid-alt' ></i>
-
-         <span class="links_name">group line</span>
-
-       </a>
-
-       <span class="tooltip">User</span>
-
-     </li>
-
     				
-
-    				 <li>
-
+    				<li>
        <a href="https://line.me/ti/p/uBbtChN-YD">
-
-         <i class='bx bx-user' ></i>
-
-         <span class="links_name">line ส่วนตัว</span>
-
+         <i class='bx bx-grid-alt' ></i>
+         <span class="links_name">group line</span>
        </a>
-
        <span class="tooltip">User</span>
-
      </li>
-
+    				
+    				 <li>
+       <a href="https://line.me/ti/p/uBbtChN-YD">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">line ส่วนตัว</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
     </ul>
-
   </div>
-
   <section class="home-section">
-
       <div class="text">LINK DOWNLOAD</div>
-
       
-
       <h1>
-
       				<a>
-
       							1:CES VPN แอป ssh
-
      </h1>
-
      
-
        <h1>
-
        				
-
 	     							 <a href="$code=101.html">
-
           <i class=''></i>
-
           <g><span class="links_name">CLICK</span>
-
-          </h1>
-
+          </h1>                    
+          
+          <h1><p>
+          				<div class="center">
+          				<a>SONE FILE<a>
+          	</h1></p>							
+          				
+          
          <h1>
-
          				
-
-         				<a>1:FILE TRUE SG01
-
+         				<a>1:TRUE NOPRO SG01
          		</h1>		 
-
           
-
           <h1>          				          				
-
           				    <a href="$code=102.html">
-
           <i class=''></i>
-
           <g><span class="links_name">CLICK</span>      				
-
           </h1>
-
           
-
       </g>
-
         </a>      				
-
            </h1>
-
+           
+         <h1>  
+           <a>2:DTAC TAMJAI SG01
+         		</h1>		 
+          
+          <h1>          				          				
+          				    <a href="$code=103.html">
+          <i class=''></i>
+          <g><span class="links_name">CLICK</span>      				
+          </h1>
+          
+      </g>
+        </a>      				
+           </h1>
                                               
-
   </section> 
-
  
-
   <script>
-
   let sidebar = document.querySelector(".sidebar");
-
   let closeBtn = document.querySelector("#btn");
-
   let searchBtn = document.querySelector(".bx-search");
 
   closeBtn.addEventListener("click", ()=>{
-
     sidebar.classList.toggle("open");
-
     menuBtnChange();//calling the function(optional)
-
   });
 
   searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-
     sidebar.classList.toggle("open");
-
     menuBtnChange(); //calling the function(optional)
-
   });
 
   // following are the code to change sidebar button(optional)
-
   function menuBtnChange() {
-
    if(sidebar.classList.contains("open")){
-
      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-
    }else {
-
      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
-
    }
-
   }
-
   </script>
-
 </body>
-
 </html>
