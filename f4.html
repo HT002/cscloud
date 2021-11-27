@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+    <head>
+
+          <meta charset="UTF-8">
+
+      <title> Button Download File</title>
+
+          <link rel="stylesheet" href="CSS/style2.css">
+
+          <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+       
+
+             <style> 
+
+g
+
+{ border:8px solid #67c8d7;
+
+padding:0px 30px; 
+
+background:#fff;
+
+width:100px;
+
+border-radius:45px; }
+
+</style>
+
+    
+
+  </head>
+
+  <body>
+
+      
+
+      <a href="index.html">
+
+         <i class=''></i>
+
+          <g><span class="links_name">CLICK</span>
+
+      </g>
+
+          </a>
+
+      <div class="button">
+
+              <div class="content">
+
+                        <a href="FILE/oeklive01.ehi" download="OEK TRUE HTTP.ehi">
+                         <i class="bx bx-cloud-download"></i>
+
+                         <span class="button-text">Download</span>
+
+                         </div>
+              </a>
+        
+        </div>
+
+          <script>
+
+                const button = document.querySelector(".button");
+
+                button.addEventListener("click", () =>{
+
+                        button.classList.add("active");
+
+                        setTimeout(()=>{
+
+                                  button.classList.remove("active");
+
+                                  button.querySelector("i").classList.replace("bx-cloud-download", "bx-check-circle")
+
+                                  button.querySelector("span").innerText = "Completed";
+
+                        },6000);
+
+                });
+
+        </script>
+
+        </body>
+
+    </html>
